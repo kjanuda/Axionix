@@ -19,7 +19,8 @@ export default function EcoGreenWebServices() {
         "MySQL": "🗃️",
         "AWS S3": "☁️",
         "Ballerina": "⚡"
-      }
+      },
+      link: "/careers"
     },
     {
       title: "Blog Page",
@@ -31,7 +32,8 @@ export default function EcoGreenWebServices() {
         "MySQL": "🗃️",
         "AWS S3": "☁️",
         "Ballerina": "⚡"
-      }
+      },
+      link: "/blog"
     },
     {
       title: "News Page",
@@ -43,18 +45,20 @@ export default function EcoGreenWebServices() {
         "MySQL": "🗃️",
         "AWS S3": "☁️",
         "Ballerina": "⚡"
-      }
+      },
+      link: "/news"
     },
     {
       title: "Webinar Page",
       subtitle: "Educational Sessions",
-      description: "Join our educational webinars and learn from agricultural experts about modern farming techniques. Built on robust PostgreSQL database and efficient Ballerina framework for seamless live streaming experiences.",
+      description: "Join our  webinars and learn from agricultural experts about modern farming techniques. Built on robust PostgreSQL database and efficient Ballerina framework for seamless live streaming experiences.",
       image: "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
       technologies: ["PostgreSQL", "Ballerina"],
       techIcons: {
         "PostgreSQL": "🐘",
         "Ballerina": "⚡"
-      }
+      },
+      link: "/webinar"
     },
     {
       title: "Email Subscription",
@@ -66,7 +70,8 @@ export default function EcoGreenWebServices() {
         "MongoDB": "🍃",
         "Google SMTP": "📧",
         "Ballerina": "⚡"
-      }
+      },
+      link: "/email"
     },
     {
       title: "Problem Solver",
@@ -78,7 +83,8 @@ export default function EcoGreenWebServices() {
         "AWS S3": "☁️",
         "Gemini AI": "🤖",
         "Ballerina": "⚡"
-      }
+      },
+      link: "/problem"
     },
     {
       title: "Chatbot",
@@ -89,7 +95,8 @@ export default function EcoGreenWebServices() {
       techIcons: {
         "Azure OpenAI": "🧠",
         "Ballerina": "⚡"
-      }
+      },
+      link: "/chatbot"
     },
     {
       title: "Customer Forms",
@@ -101,7 +108,8 @@ export default function EcoGreenWebServices() {
         "MongoDB": "🍃",
         "Google SMTP": "📧",
         "Ballerina": "⚡"
-      }
+      },
+      link: "/customer"
     }
   ];
 
@@ -145,6 +153,11 @@ export default function EcoGreenWebServices() {
     if (isAutoPlaying) {
       setProgress(0);
     }
+  };
+
+  // Handle navigation
+  const handleNavigation = (link) => {
+    window.location.href = link;
   };
 
   return (
@@ -269,7 +282,10 @@ export default function EcoGreenWebServices() {
                     <p className="text-xs sm:text-sm lg:text-base xl:text-lg mb-4 sm:mb-6 lg:mb-10 leading-relaxed text-gray-100 max-w-xl mx-auto px-2 sm:px-0">
                       {service.description}
                     </p>
-                    <button className="group bg-gradient-to-r from-green-500 to-green-600 hover:from-green-400 hover:to-green-500 text-white font-bold py-2 sm:py-3 lg:py-4 px-6 sm:px-8 lg:px-10 rounded-full transition-all duration-500 transform hover:scale-110 hover:shadow-2xl hover:shadow-green-500/30 relative overflow-hidden text-sm sm:text-base">
+                    <button 
+                      onClick={() => handleNavigation(service.link)}
+                      className="group bg-gradient-to-r from-green-500 to-green-600 hover:from-green-400 hover:to-green-500 text-white font-bold py-2 sm:py-3 lg:py-4 px-6 sm:px-8 lg:px-10 rounded-full transition-all duration-500 transform hover:scale-110 hover:shadow-2xl hover:shadow-green-500/30 relative overflow-hidden text-sm sm:text-base"
+                    >
                       <span className="relative z-10">Discover More</span>
                       <div className="absolute inset-0 bg-white/20 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left"></div>
                     </button>

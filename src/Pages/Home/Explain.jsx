@@ -69,9 +69,7 @@ const EcoGreen360 = () => {
             </div>
             
             {/* Floating indicators */}
-            <div className="absolute -top-1 sm:-top-2 -right-1 sm:-right-2 bg-green-500 text-white px-2 sm:px-3 py-1 rounded-full text-xs sm:text-sm font-medium shadow-lg">
-              Live Preview
-            </div>
+            
           </div>
           
           {/* Right: System Explanation */}

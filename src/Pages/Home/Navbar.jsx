@@ -106,16 +106,7 @@ export default function Navbar() {
             >
               ABOUT US
             </Link>
-            <Link
-              to="/services"
-              className={`text-sm font-medium tracking-wide uppercase transition-all duration-200 ${
-                isActive('/services') 
-                  ? 'text-blue-600 border-b-2 border-blue-600 pb-1' 
-                  : 'text-gray-700 hover:text-blue-600'
-              } ${isScrolled ? 'hover:text-blue-500' : 'hover:text-blue-600'}`}
-            >
-              SERVICES
-            </Link>
+            
             <Link
               to="/contact"
               className={`text-sm font-medium tracking-wide uppercase transition-all duration-200 ${
@@ -179,17 +170,7 @@ export default function Navbar() {
           >
             ABOUT US
           </Link>
-          <Link
-            to="/services"
-            className={`block py-3 px-2 text-base font-medium tracking-wide uppercase transition-colors duration-200 ${
-              isActive('/services') 
-                ? 'text-blue-600 border-l-4 border-blue-600 bg-blue-50' 
-                : 'text-gray-700 hover:text-blue-600 hover:bg-gray-50'
-            }`}
-            onClick={() => setIsOpen(false)}
-          >
-            SERVICES
-          </Link>
+          
           <Link
             to="/contact"
             className={`block py-3 px-2 text-base font-medium tracking-wide uppercase transition-colors duration-200 ${
