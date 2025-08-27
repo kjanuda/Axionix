@@ -166,7 +166,7 @@ export default function EcoGreenWebServices() {
         {/* Mobile-optimized header */}
         <div className="text-center mb-8 sm:mb-16">
           <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-800 mb-4 sm:mb-6 px-4">
-            Additional Ballerina microservices supporting the EcoGreen platform.
+            Additional Ballerina microservices supporting the EcoGreen360 platform.
           </h1>
           <p className="text-base sm:text-lg lg:text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed px-4">
             Comprehensive digital solutions for modern agriculture powered by cutting-edge technology stack

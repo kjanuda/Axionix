@@ -14,8 +14,12 @@ import Webinar from "../Pages/subreview/Webinar.jsx"
 import Problem from "../Pages/subreview/Problem.jsx"
 import Chatbot from "../Pages/subreview/Chatbot.jsx"
 import Email from "../Pages/subreview/Email.jsx"
+import Blog from "../Pages/subreview/Blog.jsx"
 import Viewer from "../Pages/Home/viewer.jsx";
 import Contact from "../Pages/Home/contact.jsx";
+import Diagram from "../Pages/Home/diagram.jsx";
+
+
 // Create a Home page component that includes both Header and Overview
 const HomePage = () => {
   return (
@@ -23,6 +27,7 @@ const HomePage = () => {
       <Header />
       <Overview />
       <Explain />
+      <Diagram />
       <Others />
       <Viewer />
     </>
@@ -47,6 +52,7 @@ const AppRoute = () => {
            <Route path="/chatbot" element={<Chatbot />} />
             <Route path="/email" element={<Email />} />
              <Route path="/contact" element={<Contact />} />
+             <Route path="/blog" element={<Blog />} />
 
         
         {/* Add more routes as needed */}

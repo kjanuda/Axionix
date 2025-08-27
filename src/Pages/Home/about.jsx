@@ -13,7 +13,6 @@ export default function About() {
 
   const teamStats = [
     { icon: Users, label: "Team Members", value: "4", color: "text-blue-600" },
-   
     { icon: Target, label: "Focus Area", value: "Ballerina", color: "text-purple-600" },
     { icon: Leaf, label: "Platform Built", value: "EcoGreen360", color: "text-emerald-600" }
   ];
@@ -37,7 +36,7 @@ export default function About() {
       {/* Stats Section */}
       <section className="py-16 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {teamStats.map((stat, index) => (
               <div 
                 key={index}
@@ -65,8 +64,7 @@ export default function About() {
             </h2>
             <div className="space-y-6">
               <p className="text-lg text-gray-600 leading-relaxed">
-                As undergraduate students with a collective experience of over 0 years in technology development, 
-                we came together with a shared vision of creating meaningful environmental impact through innovation.
+                As undergraduate students, we came together with a shared vision of creating meaningful environmental impact through innovation.
               </p>
               <p className="text-lg text-gray-600 leading-relaxed">
                 Our focus on <span className="font-semibold text-green-600">Ballerina</span> programming language 
@@ -80,9 +78,6 @@ export default function About() {
           </div>
         </div>
       </section>
-
-     
-      
     </div>
   );
 }

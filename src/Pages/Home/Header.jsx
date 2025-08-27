@@ -1,6 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import { ChevronLeft, ChevronRight, Menu, Search, User, Globe, Play } from 'lucide-react';
 import eco from '../Home/images/eco36.png';
+import eco1 from '../Home/images/gr1.jpg';
+import eco2 from '../Home/images/gr2.jpg';
+
 
 const AutoCarouselHeader = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -11,6 +14,20 @@ const AutoCarouselHeader = () => {
       image: eco,
       title: "",
       subtitle: "",
+      description: "",
+    },
+    {
+      id: 2,
+      image: eco1,
+      title: "ECOGREEN360",
+      subtitle: "Smart IoT Greenhouse Management Platform with AI Integration",
+      description: "",
+    },
+    {
+      id: 3,
+      image: eco2,
+      title: "ECOGREEN360",
+      subtitle: "Intelligent IoT Greenhouse Management",
       description: "",
     },
   ];
@@ -87,9 +104,7 @@ const AutoCarouselHeader = () => {
                         )}
                         {(slide.title || slide.subtitle || slide.description) && (
                           <div className="mt-4 sm:mt-6">
-                            <button className="bg-blue-600 hover:bg-blue-700 active:bg-blue-800 text-white font-semibold py-2.5 px-5 xs:py-3 xs:px-6 sm:py-4 sm:px-8 rounded-lg transition-all duration-300 transform hover:scale-105 active:scale-95 text-sm sm:text-base shadow-lg touch-manipulation">
-                              Learn More
-                            </button>
+                            
                           </div>
                         )}
                       </div>
